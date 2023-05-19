@@ -1,0 +1,52 @@
+@keyframes ping {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.score-box {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: rgba(127, 255, 212, 0.411);
+    font-size: 20px;  /* Adjust size as needed */
+    font-weight: bold;  /* Adjust weight as needed */
+    color: #00aa17;  /* Adjust color as needed */
+    text-align: center;
+    padding-top: 20px;
+    z-index: 3;
+}
+
+.ping {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(211, 33, 33, 0.568); /* adjust color and transparency as needed */
+    animation: ping 1s ease-out;
+    z-index: 1;
+}
+
+.boat {
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    border-radius: 75%;
+    background: rgba(63, 49, 43, 0.863); /* adjust color and transparency as needed */
+    z-index: 2;
+}
+
+body {
+    height: 100vh; /* ensures that the body fills the viewport */
+    margin: 0;
+    background: #94e1ff; /* change to suit your design */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
